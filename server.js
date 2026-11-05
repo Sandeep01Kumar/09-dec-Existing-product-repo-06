@@ -52,6 +52,7 @@ const port = 3000;
  * The server responds identically to all HTTP methods and paths.
  * @const {http.Server}
  */
+/** Handles every HTTP request by returning status 200 with the plain-text body "Hello, World!". */
 const server = http.createServer((req, res) => {
   // Set HTTP response status code to 200 (OK)
   res.statusCode = 200;
