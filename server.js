@@ -47,9 +47,9 @@ const port = 3000;
  * @returns {void} Response is written directly to the res object.
  */
 
+// Refinement: merged the stacked @const {http.Server} block into the summary below so the type attaches.
 /**
- * HTTP Server instance created with request handler callback.
- * The server responds identically to all HTTP methods and paths.
+ * Handles every HTTP request by returning status 200 with the plain-text body "Hello, World!".
  * @const {http.Server}
  */
 const server = http.createServer((req, res) => {
